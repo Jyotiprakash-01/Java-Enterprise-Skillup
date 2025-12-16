@@ -1,5 +1,18 @@
 package com.creational_patterns;
 
+/**
+ * Limitations:
+ * Violation of Open closed Principle: suppose a new type of vehicle is added then we have to modify the factory method of factory class. Similar to a Drive Through and Burger Analogy(neetcode)
+ * Scalability Issues: As no of product types increase and their dependencies increase the simple factory method can become large and complex. managing a lot of those dependencies with a single class is difficult and makes debugging/ testing a lot more difficult. 
+ * Tight Coupling.
+ * Redundancy in modern frameworks: modern frameworks use DI that manage object creation and dependencies more effectively. 
+ * 
+ * Alternatives:
+ * 	Factory Method Pattern
+ * 	Abstract Factory Pattern
+ * 	Dependencies Injection
+ * 
+ */
 interface Vehicle{
 	void start();
 }
